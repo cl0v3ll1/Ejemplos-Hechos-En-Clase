@@ -78,68 +78,68 @@
 
 # Diccionario ( Menu ( agregar, eliminar y actualizar precios ) )
 
-# productos={
-#     "lapiz": 100,
-#     "goma": 100,
-#     "estuche": 500,
-#     "plumon":1000,
-# }
+productos={
+    "lapiz": 100,
+    "goma": 100,
+    "estuche": 500,
+    "plumon":1000,
+}
 
-# while True:
+while True:
 
-#     try:
-#         print('''
-#         1.- Agregar articulo y precio
-#         2.- Ver listado
-#         3.- Borrar articulo
-#         4.- Actualizar precio
-#         5.- Salir
-#         ''')
+    try:
+        print('''
+        1.- Agregar articulo y precio
+        2.- Ver listado
+        3.- Borrar articulo
+        4.- Actualizar precio
+        5.- Salir
+        ''')
 
-#         op=int(input("Seleccione un a opcion \n"))
+        op=int(input("Seleccione un a opcion \n"))
 
-#         match op:
+        match op:
 
-#             case 1:
+            case 1:
 
-#                 art=input("Ingrese el nombre del articulo \n")
-#                 precio=int(input ("Ingres el precio del articulo \n"))
-#                 productos[art]=precio
+                art=input("Ingrese el nombre del articulo \n")
+                precio=int(input ("Ingres el precio del articulo \n"))
+                productos[art]=precio
 
-#             case 2:
+            case 2:
 
-#                 for nom, precio in productos.items():
-#                     print(nom, "$", precio)
+                for nom, precio in productos.items():
+                    print(nom, "$", precio)
 
-#             case 3:
+            case 3:
 
-#                 borrar=input("¿Cual es el articulo que quiere borrar? \n")
-#                 del productos[borrar]
-#                 print(f"El articulo {borrar} fue borrado")
+                borrar=input("¿Cual es el articulo que quiere borrar? \n")
+                del productos[borrar]
+                print(f"El articulo {borrar} fue borrado")
 
-#             case 4:
+            case 4:
 
-#                 for nom, precio in productos.items():
-#                     print(nom, "$", precio)
-#                 art=input("¿Cual es el precio que quiere actualizar? \n")
+                for nom, precio in productos.items():
+                    print(nom, "$", precio)
+                art=input("¿Cual es el precio que quiere actualizar? \n")
 
-#                 if art in productos:
-#                     precio=int(input("Ingrese el precio nuevo: \n"))
-#                     productos[art]=precio
-#                 else:
-#                     print("El articulo no existe")
+                if art in productos:
+                    precio=int(input("Ingrese el precio nuevo: \n"))
+                    productos[art]=precio
+                else:
+                    print("El articulo no existe")
 
-#             case 5:
+            case 5:
 
-#                 print("Saliendo")
-#                 break
+                print("Saliendo")
+                break
 
-#             case _:
+            case _:
 
-#                 print("Opcion invalida")
+                print("Opcion invalida")
 
-#     except Exception as error:
-#         print("Error, hiciste algo mal:", error)
+    except Exception as error:
+        print("Error, hiciste algo mal:", error)
 
 # --------------------------------------------------------------------------------
 
