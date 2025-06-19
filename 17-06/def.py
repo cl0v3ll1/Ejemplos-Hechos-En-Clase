@@ -95,17 +95,17 @@
 #     except Exception:
 #         print("Solo numeros enteros")
 
-personas=[
+personas={
 
-1:{"Nombre": "Benjamin Aguilera",
+   1:{"Nombre": "Benjamin Aguilera",
    "Telefono": 56978452084,
-   "Estado civil": "Soltero"}
-2:{"Nombre": "Javier Canales",
+   "Estado civil": "Soltero"},
+   2:{"Nombre": "Javier Canales",
    "Telefono": 56984750937,
-   "Estado civil": "Soltero"}
-3:{"Nombre": "Daeveth Manriquez",
-   "Telefono": 56987549612,
-   "Estado civil": "Casado"}
-]
+   "Estado civil": "Soltero"},
+   3:{"Nombre": "Daeveth Manriquez",
+      "Telefono": 56987549612,
+   "Estado civil": "Casado"},
+}
 
-personas
+personas()
